@@ -1,0 +1,112 @@
+#ticket_info {
+    position: relative;
+    width: 70%;
+    margin: 30px auto;
+    padding: 0px;
+    border: 5px ridge #019267;
+}
+
+.new_line {
+    clear: both;
+}
+
+.special_info1 {
+    float: left;
+    width: 30%;
+    padding-left: 3px;
+}
+
+.colon {
+    float: left;
+    width: 5%;
+}
+
+.special_info2 {
+    float: left;
+    width: 54.9%;
+}
+
+#choose_seat {
+    clear: both;
+    text-align: center;
+    padding-top: 5px;
+    border-top: #019267 5px ridge;
+    border-left: #019267 5px ridge;
+    border-right: #019267 5px ridge;
+}
+
+legend{
+    font-size: 25px;
+}
+
+br + label {
+    padding: 5px;
+}
+
+#theatre_num {
+    width: 60px;
+    margin: 0px auto;
+}
+
+.theatre_num {
+    float: left;
+    margin: 0px 1px;
+}
+
+table {
+    width: 99.9%;
+    border: 1px solid #019267;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+caption {
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+th[colspan="6"] {
+    padding: 20px 0px 20px;
+    font-size: 30px;
+    color: #ffd97a;
+    background-color: #019267;
+}
+
+td, th {
+    position: relative;
+    text-align: center;
+    border: 1px solid #019267;
+}
+
+input[type="checkbox"]{
+    position: absolute;
+    left: -999%;
+}
+
+input[type="checkbox"] + label {
+    display: inline-block;
+    width: 100%;
+    height: 80px;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    padding-top: 50px;
+}
+
+input[type="checkbox"] + label:hover {
+    background-color: #FDFFA9;
+    color: black;
+    font-weight: normal;
+}
+
+input[type="text"]{
+    display: none;
+}
+
+#confirmation {
+    width: 30%;
+    margin: 10px auto 0px;
+    padding-bottom: 3px;
+    border: 5px solid #019267;
+}

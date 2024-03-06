@@ -1,0 +1,38 @@
+section {
+    margin: 10px 0px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+}
+
+div {
+    font-size: 20px;
+    position: relative;
+    width: 70%;
+    margin: 30px auto;
+    padding: 0px;
+    border: 5px ridge #019267;
+}
+
+.new_line {
+    clear: both;
+}
+
+.special_info1 {
+    float: left;
+    width: 30%;
+    padding-left: 3px;
+}
+
+.colon {
+    float: left;
+    width: 5%;
+}
+
+.special_info2 {
+    float: left;
+    width: 54.9%;
+}

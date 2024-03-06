@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Behardi P. Y.">
+    <meta name="description" content="Documentation and design acknowledgement page of the Corn Cinema Website">
+    <meta name="keywords" content="corn cinema, cinema, documentation, design, acknowledgement">
+    <title>Documentation, Design & Acknowledgement</title>
+
+    <script src="../js/structure.js"></script>
+    <script> window.onload=createStructure </script>
+    <style>
+        @import url(../css/general_design.css);
+
+        h3 ul {
+            margin: 10px;
+        }
+
+        h3 {
+            margin-top: 30px;
+        }
+
+        h2 {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        li {
+            margin-left: 20px;
+            text-align: justify;
+        }
+
+        li img {
+            height: 35em;
+        }
+
+        a:link {
+            color: #00C897;
+        }
+
+        a:visited {
+            color: #019267;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>Design & Technical</h2>
+        <ul>
+            <li><h3>Structure</h3>
+                <ul>
+                    <li>Here is the sketch for the overall theme layout. In the end, I decided that I would only put 2 links in the Navigation tab (Home, Buy Ticket)</li>
+                    <li><img src="../image/theme_layout_sketch.jpg" alt="Theme Layout Sketch" title="Theme Layout Sketch"></li>
+                    <li>There are in total 4 pages for this cinema. In order:
+                        <ul>
+                            <li>Home Page</li>
+                            <li>Buy Ticket Page</li>
+                            <li>Seat Selection Page</li>
+                            <li>Print Page</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><h3>Features</h3>
+                <ul>
+                    <li><h4>All Pages</h4>
+                        <ul>
+                            <li>Logo animation</li>
+                            <li>Disabled navigation link if it links to the current page</li>
+                        </ul>
+                    </li>
+                    <li><h4>Home Page</h4>
+                        <ul>
+                            <li>Clicking on the movie thumbnail changes the trailer video to its corresponding movie trailer</li>
+                        </ul>
+                    </li>
+                    <li><h4>Buy Ticket Page</h4>
+                        <ul>
+                            <li>Selecting a different cinema shows different movie list that is currently playing in the respective cinema</li>
+                            <li>Clicking on the movie thumbnail selects it</li>
+                        </ul>
+                    </li>
+                    <li><h4>Seat Selection Page</h4>
+                        <ul>
+                            <li>A table to show the seat arrangement</li>
+                            <li>Hovering over a seat changes its style, whether the seat is selected or not</li>
+                            <li>Dynamic sorted seat list text which corresponds to which seat has been selected</li>
+                            <li>If the user hasn't selected any seat, clicking the submit button will give a warning text instead of redirecting to the Print Page</li>
+                        </ul>
+                    </li>
+                    <li><h4>Print Page</h4>
+                        <ul>
+                            <li>Creates a ticket for each seat selected from Seat Selection Page</li>
+                            <li>Printing the page will give a different layout</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><h3>Technical Properties</h3>
+                <ul>
+                    <li><h4>Dynamic Listing:</h4> The list of movies, and cinemas is not statically specified in the HTML files. Instead, the list is put into a javascript file, and for each HTML page which needs the list of movie can use the javascript file. Thus, when adding a movie or cinema or movies in a cinema, can be done by only changing the javascript file, and no further modifying the HTML file is needed</li>
+                    <li><h4>Sending information to another page:</h4> Using both the modified search bar (from using a form and a submit button), and local storage (using a regular button, and javascript "onclick" event listener to redirect the page)</li>
+                    <li><h4>Video Outsourcing:</h4> To display a video on the website, instead of downloading the video, I decided to search for a video online, and link it to that video to save space</li>
+                    <li><h4>Refactor:</h4> Removed redundant codes, and similar codes are replaced with a function or put into a separate javascript file</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h2>Acknowledgement</h2>
+        <ul>
+            <li> <a href="https://www.canva.com" target="_blank">https://www.canva.com</a> (I create all the movie thumbnails and logo using this site) </li>
+            <li> <a href="https://free-stock.video/" target="_blank">https://free-stock.video/</a> (I use many of the videos here as the movie trailers)</li>
+            <li> <a href="https://maps.google.com/" target="_blank">https://maps.google.com/</a> (I use google maps when I screenshot the location of the cinemas available) </li>
+            <li> <a href="https://stackoverflow.com/questions/44299150/set-text-inside-a-check-box" target="_blank"> https://stackoverflow.com/questions/44299150/set-text-inside-a-check-box</a> (I used this site as a reference for the style of seating in my ticket page) </li>
+            <li> <a href="https://flaviocopes.com/how-to-add-event-listener-multiple-elements-javascript/" target="_blank">https://flaviocopes.com/how-to-add-event-listener-multiple-elements-javascript/</a> (I used this site as a reference for the logic of the seating in my ticket page) </li>
+            <li> <a href="https://colorhunt.co/palette/01926700c897ffd365fdffa9" target="_blank"> https://colorhunt.co/palette/01926700c897ffd365fdffa9</a> (I used this color palette for all my pages) </li>
+            <li> <a href="https://www.w3schools.com/default.asp" target="_blank"> https://www.w3schools.com/default.asp </a> & <a href="https://developer.mozilla.org/en-US/" target="_blank"> https://developer.mozilla.org/en-US/ </a> (I used these websites a lot to find or search or how to use some functions/attributes etc.) </li>
+        </ul>
+
+        <br>
+    </section>
+</body>
+</html>

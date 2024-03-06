@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Behardi P. Y.">
+    <meta name="description" content="Now showing movies page and the respective cinemas of the Corn Cinema Website">
+    <meta name="keywords" content="corn cinema, cinema, now showing movie, the falling giant, foxie and the magical forest, cartoon coffee, festival grand cinema, broadway cinema, MOVie MOViE cinema">
+    <title>Buy Ticket</title>
+
+    <script src="../js/structure.js"></script>
+    <script src="../js/movies.js"></script>
+    <script src="../js/cinemas.js"></script>
+    <script src="../js/cinema_location.js"></script>
+    <script src="../js/now_showing_script.js"></script>
+    <style>
+        @import url(../css/general_design.css);
+        @import url(../css/now_showing_design.css);
+    </style>
+</head>
+<body>
+    <section>
+        <div id="select_movie_info">
+            <form method="get" action="ticket.html">
+                <fieldset id="choose_cinema">
+                    <legend> Choose the Cinema </legend>
+                    <p>
+                    <label for="movie_cinema"> Select Cinema </label>
+                    <select id="movie_cinema" name="movie_cinema"></select>
+                    <br>
+                    </p>
+                </fieldset>
+                    
+                <fieldset id="choose_others">
+                    <legend> Choose the Movie, Location, & Time </legend>
+                    <div class="three_columns"></div>
+                    <div id="submit_button"><input type="submit" value="Buy Ticket"></div>
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="cinema_locations">
+            <h2 class="new_section"> Cinema Address & Maps </h2>
+        </div>
+    </section>
+</body>
+</html>

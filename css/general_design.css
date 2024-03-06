@@ -1,0 +1,140 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header, nav, footer {
+    font-family: Verdana, 'Courier New', Bahnschrift, 'Times New Roman', Arial !important;
+}
+
+header {
+    text-align: center;
+    padding-top: 80px;
+    background-color: #00C897;
+    padding-bottom: 5px;
+    border-bottom: #019267 10px ridge;
+}
+header img{
+    width: 15%;
+    height: 15%;
+    position: relative;
+    animation-name: logo;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes logo{
+    0% {left: 0px; transform: rotate(0deg);}
+    25% {left: -30%; transform: rotate(360deg);}
+    75% {left: 30%; transform: rotate(-360deg);}
+    100% {left: 0px; transform: rotate(0deg);}
+}
+header h1{
+    color: #FDFFA9;
+    margin: 10px auto;
+    padding: 5px;
+    font-weight: bold;
+    border: #FDFFA9 5px solid;
+    width: 37%;
+    border-radius: 24px;
+}
+
+nav {
+    position: fixed;
+    z-index: 1000;
+    background-color: #ffd97a;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+}
+
+nav img{
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+nav p{
+    float: left;
+    font-size: 20px;
+    padding-top: 22px;
+    line-height: 0px;
+    color: white;
+    font-weight: bold;
+}
+
+nav p + p{
+    float: right;
+    padding-right: 20px;
+    color: #FDFFA9;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav a:link, nav a:visited{color: white;}
+nav a:hover{color: #FDFFA9;}
+
+footer {
+    clear: both;
+    text-align: center;
+    background-color: #00C897;
+    border-top: #019267 10px ridge;
+    padding: 10px 0px;
+    color: white;
+}
+
+footer a{
+    color: #019267;
+    font-weight: bold;
+}
+
+footer a:link, footer a:visited{color: #019267;}
+footer a:hover{color: white; text-decoration: none;}
+
+section {
+    font-family: 'Comic Sans MS', Century, 'Times New Roman', Arial;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+.new_section {
+    padding: 10px;
+    margin: 10px 0px;
+    font-size: 50px;
+    background-color: #00C897;
+    color:#FDFFA9;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+    font-size: 22px;
+}
+
+#submit_button {
+    clear: both;
+    width: 100%;
+    text-align: center;
+}
+
+#submit_button input, #submit_button button {
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Comic Sans MS', Century, 'Times New Roman', Arial;
+    color: #FDFFA9;
+    font-weight: bold;
+    border: none;
+    background-image: linear-gradient(#00ffbf, #004732);
+    border-radius: 12px;
+    margin: 10px auto;
+}
+
+#submit_button input:hover, #submit_button button:hover {
+    cursor: pointer;
+}
